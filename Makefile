@@ -12,7 +12,7 @@ build/contract:
 	forge inspect Web3Entry b > ../build/tmp/Web3Entry.bin && \
 	cd ../ && \
 	mkdir -p build/contract/
-	abigen --bin=build/tmp/Web3Entry.bin --abi=build/tmp/Web3Entry.abi --pkg=contract --out=build/contract/Web3Entry.go
+	abigen --bin=build/tmp/Web3Entry.bin --abi=build/tmp/Web3Entry.abi --pkg=contracts --out=build/contract/Web3Entry.go
 
 clean-build:
 	rm -rf ./build/*
